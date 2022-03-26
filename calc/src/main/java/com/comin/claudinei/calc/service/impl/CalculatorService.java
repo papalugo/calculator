@@ -1,11 +1,10 @@
 package com.comin.claudinei.calc.service.impl;
 
+import com.comin.claudinei.calc.NumberUtils;
+import com.comin.claudinei.calc.model.CalcSendModel;
+import com.comin.claudinei.calc.model.ResultModel;
 import com.comin.claudinei.calc.service.ICalculatorService;
-import com.comin.claudinei.core.NumberUtils;
-import com.comin.claudinei.core.model.CalcSendModel;
-import com.comin.claudinei.core.model.ResultModel;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.math.RoundingMode;

@@ -1,8 +1,8 @@
 package com.comin.claudinei.calc.service;
 
 
-import com.comin.claudinei.core.model.CalcSendModel;
-import com.comin.claudinei.core.model.ResultModel;
+import com.comin.claudinei.calc.model.CalcSendModel;
+import com.comin.claudinei.calc.model.ResultModel;
 import org.springframework.stereotype.Component;
 
 @Component

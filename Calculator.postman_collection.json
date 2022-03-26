@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "b3a07d66-96e1-4ddd-a6df-58529cdf29a9",
+		"name": "Calculator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sum",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "transaction-id",
+						"value": "{{$guid}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/calc/sum?a=2&b=3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"calc",
+						"sum"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "2"
+						},
+						{
+							"key": "b",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Subtract",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "transaction-id",
+						"value": "{{$guid}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/calc/subtract?a=3&b=3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"calc",
+						"subtract"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "3"
+						},
+						{
+							"key": "b",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Division",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "transaction-id",
+						"value": "{{$guid}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/calc/division?a=3&b=3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"calc",
+						"division"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "3"
+						},
+						{
+							"key": "b",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Multiply",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "transaction-id",
+						"value": "{{$guid}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/calc/division?a=3&b=3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"calc",
+						"division"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "3"
+						},
+						{
+							"key": "b",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Division with arbitrary precision",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "transaction-id",
+						"value": "{{$guid}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/calc/division?a=3&b=3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"calc",
+						"division"
+					],
+					"query": [
+						{
+							"key": "a",
+							"value": "3"
+						},
+						{
+							"key": "b",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

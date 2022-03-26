@@ -1,8 +1,8 @@
-package com.comin.claudinei.calc.service.impl;
+package com.comin.claudinei.rest.service.impl;
 
-import com.comin.claudinei.calc.ObjectMapperUtils;
-import com.comin.claudinei.calc.model.ResultModel;
-import com.comin.claudinei.calc.service.IRabbitMqSendService;
+import com.comin.claudinei.rest.ObjectMapperUtils;
+import com.comin.claudinei.rest.model.CalcSendModel;
+import com.comin.claudinei.rest.service.IRabbitMqSendService;
 import lombok.SneakyThrows;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,8 +30,8 @@ public class RabbitMqSendService implements IRabbitMqSendService {
 
     @SneakyThrows
     @Override
-    public void send(ResultModel resultModel) {
-        logger.info("Send to rabbitmq: " + exchange + " " + routingkeySend + " " + ObjectMapperUtils.getInstance().writeValueAsString(resultModel));
-        rabbitTemplate.convertAndSend(exchange, routingkeySend, resultModel);
+    public void send(CalcSendModel calcSendModel) {
+        logger.info("Send to rabbitmq: " + exchange + " " + routingkeySend + " " + ObjectMapperUtils.getInstance().writeValueAsString(calcSendModel));
+        rabbitTemplate.convertAndSend(exchange, routingkeySend, calcSendModel);
     }
 }
